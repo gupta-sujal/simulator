@@ -11,7 +11,7 @@ def rungeKutta(f, x0, y0, h):
     return y_out
 
 def f(x, y):
-    return x + y**2
+    return x + y*2
 
 X = 5
 h = 0.1
