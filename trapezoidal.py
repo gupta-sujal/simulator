@@ -30,7 +30,7 @@ print(B)
 print(u)
 
 def trapezoidal(fun,dt,t0,y0):
-    y0=np.reshape(y0,(2,1))
+    y0=np.reshape(y0,(m,1))
     f0=fun(t0,y0)
     C = y0 + dt/2*f0
     # print("C")
@@ -46,7 +46,7 @@ def trapezoidal(fun,dt,t0,y0):
 
 def system(t,y):
     #y is a 2D array
-    y=np.reshape(y,(2,1))
+    y=np.reshape(y,(m,1))
     dy = np.dot(A,y) + np.dot(B,u)
     return dy
 
