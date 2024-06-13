@@ -20,8 +20,11 @@ def input_mat(A):
             value = float(input(f"Enter value for matrix[{i}][{j}]: "))  # Taking float input for generality
             A[i, j] = value
 
+print("enter matrix A with each entry in new line")
 input_mat(A)
+print("enter matrix B with each entry in new line")
 input_mat(B)
+print("enter matrix u with each entry in new line")
 input_mat(u)
 
 
